@@ -2431,7 +2431,6 @@ document.getElementById('day').textContent = day;
   }
 
   // File upload handler
-  document.getElementById('wp-upload').onchange = async function() {
     var f = this.files[0]; if (!f) return;
 
     if (f.size > MAX_BYTES) {
