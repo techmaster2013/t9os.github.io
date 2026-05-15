@@ -2430,7 +2430,8 @@ document.getElementById('day').textContent = day;
     }).observe(settingsEl, { attributes: true, attributeFilter: ['style'] });
   }
 
-  // File upload handler
+// File upload handler
+  document.getElementById('wp-upload').onchange = async function() {
     var f = this.files[0]; if (!f) return;
 
     if (f.size > MAX_BYTES) {
